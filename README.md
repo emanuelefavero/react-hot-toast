@@ -4,6 +4,14 @@ This is an example of how to use and customize the [react-hot-toast](https://rea
 
 > Note: Check [react-toastify](https://github.com/emanuelefavero/react-toastify) for another toast notification library for react
 
+## Demo
+
+- [https://react-hot-toast-five.vercel.app/](https://react-hot-toast-five.vercel.app/)
+
+#### Screenshot
+
+<img src="screenshot.png" alt="screenshot" width="300">
+
 ## Run App
 
 - clone the repo and `cd` into it
