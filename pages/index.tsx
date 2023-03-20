@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import toast, { Toaster } from 'react-hot-toast'
 
 // BEWARE: In development, the promise toast will show up twice
+// BEWARE: react-hot-toast depends on react client code to work so it can't be used in server side code (like getStaticProps)
 
 export default function Home() {
   const [data, setData] = useState<any>(null)
@@ -19,15 +20,6 @@ export default function Home() {
         }, 1000)
       })
     }
-
-    // if (isFetched) {
-    //   resolve({ name: 'my data' })
-
-    //   // Set Data
-    //   setData({ name: 'my data' })
-    // } else {
-    //   reject('Failed to fetch data!')
-    // }
 
     // * Promise Toast
     toast.promise(
