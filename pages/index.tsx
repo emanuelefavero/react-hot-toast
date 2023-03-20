@@ -21,7 +21,7 @@ export default function Home() {
     }
 
     // * Promise Toast
-    // BEWARE: Uncomment `reactStrictMode: true,` in next.config.js to prevent the promise toast from showing up twice
+    // TIP: If really need to prevent the promise toast from showing up twice, you can uncomment `reactStrictMode: true,` in next.config.js (generally it is not advised to uncomment this, in production the toast will only show up once)
     toast.promise(
       fakeFetch(), // promise
       {
